@@ -43,13 +43,13 @@ tambien en este archivo puedes modificar la respuesta de chat gpt
 Para empezar a usar la app unicamente tienes que darle click al boton crear historia y en la nueva pagina llenar todos los campos
 
 
-<span>![</span><span>creacion de un cuento</span><span>]</span><span>(</span><span>https://raw.githubusercontent.com/JonBuluc/App-creaci-n-de-cuentos/foto1.png</span><span>)</span>
+<span>![</span><span>creacion de un cuento</span><span>]</span><span>(</span><span>https://github.com/JonBuluc/App-creaci-n-de-cuentos/blob/main/foto1.png</span><span>)</span>
 
 
 se tarda un poco en lo que hace la solicitud a open ia una vez que se realice podras ver el boton para regresar al index
 
 
-<span>![</span><span>vista de los cuentos</span><span>]</span><span>(</span><span>https://raw.githubusercontent.com/JonBuluc/App-creaci-n-de-cuentos/foto2.png</span><span>)</span>
+<span>![</span><span>vista de los cuentos</span><span>]</span><span>(</span><span>https://github.com/JonBuluc/App-creaci-n-de-cuentos/blob/main/foto2.png</span><span>)</span>
 
 ## Estructura del Proyecto
 
