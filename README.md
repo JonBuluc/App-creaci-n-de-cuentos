@@ -43,6 +43,13 @@ tambien en este archivo puedes modificar la respuesta de chat gpt
 Para empezar a usar la app unicamente tienes que darle click al boton crear historia y en la nueva pagina llenar todos los campos
 
 
+<span>![</span><span>creacion de un cuento</span><span>]</span><span>(</span><span>https://raw.githubusercontent.com/JonBuluc/App-creaci-n-de-cuentos/foto1.png</span><span>)</span>
+
+
+se tarda un poco en lo que hace la solicitud a open ia una vez que se realice podras ver el boton para regresar al index
+
+
+<span>![</span><span>vista de los cuentos</span><span>]</span><span>(</span><span>https://raw.githubusercontent.com/JonBuluc/App-creaci-n-de-cuentos/foto2.png</span><span>)</span>
 
 ## Estructura del Proyecto
 
@@ -71,13 +78,11 @@ Descripción de la estructura de archivos y carpetas en el proyecto.
 └── run.py
 ```
 
-## Contribuciones
+## Por si perdura
 
-Cómo contribuir al desarrollo de la aplicación y pautas para presentar problemas o solicitudes de características.
+La creacion de la app tuvo muchos conocimientos interesantes en caso de que el repositorio sobreviviera y tienes duda o necesitas ayuda en algo puedes mandar mensaje sin problema
 
-## Licencia
 
-Indica la licencia bajo la cual se distribuye tu aplicación.
 
 ---
 
