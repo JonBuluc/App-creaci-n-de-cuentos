@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Entre el Velo y la Realidad</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0; /* Elimina el margen predeterminado del body */
+        }
+
+        #contenido {
+            max-width: 600px; /* Establece un ancho máximo para el contenido */
+            width: 100%;
+            text-align: center;
+            margin-top: 20px; /* Espaciado superior para el contenido */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .boton-activo {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .boton-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        .boton {
+            margin-top: 10px;
+        }
+
+        #historiaCreada {
+            margin-top: 20px;
+        }
+
+        #irAIndexBtn {
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Crear Historia</h1>
+    
+    <form action="{{ url_for('main.mandar_a_crear_historia') }}" method="post" onsubmit="return validarFormulario()">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required><br>
+
+        <label for="categoria">Categoría:</label>
+        <input type="text" id="categoria" name="categoria" required><br>
+
+        <label>Duración:</label>
+        <div class="boton-group">
+            <button type="button" onclick="setDuracion('corto')" class="boton" id="btnCorto">Corto</button>
+            <button type="button" onclick="setDuracion('normal')" class="boton" id="btnNormal">Normal</button>
+            <button type="button" onclick="setDuracion('largo')" class="boton" id="btnLargo">Largo</button>
+        </div><br>
+
+        <input type="hidden" id="duracionSeleccionada" name="duracion">
+
+        <button type="button" id="crearHistoriaBtn" class="boton" disabled onclick="crearHistoria()">Crear Historia</button>
+    </form>
+
+    <div id="contenido">
+        <!-- Aquí se mostrará la historia creada -->
+        <div id="historiaCreada"></div>
+    </div>
+
+    <button id="irAIndexBtn" class="boton" onclick="irAIndex()">Ir a Index</button>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>

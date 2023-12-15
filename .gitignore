@@ -1,0 +1,5 @@
+# Ignorar el directorio __pycache__
+__pycache__/
+
+# Ignorar la base de datos
+instance/datos.db

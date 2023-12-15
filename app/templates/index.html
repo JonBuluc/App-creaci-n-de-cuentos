@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Entre el Velo y la Realidad</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="columna-izquierda">
+            <h2>Cuentos para Todos</h2>
+            <button class="boton" onclick="window.location.href='/crear-ia'">Crear Historia con IA</button>
+        </div>
+        <div class="columna-enmedio">
+            <!-- Aquí se agregarán las historias dinámicamente desde la base de datos -->
+            {% for historia in historias %}
+                <div class="historia">
+                    <h3>{{ historia.titulo }}</h3>
+                    <p><small>Categoría: {{ historia.categoria }} | Duración: {{ historia.duracion }}</small></p>
+                    <p>{{ historia.contenido }}</p>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="columna-derecha">
+            <button onclick="window.location.href='/iniciar-sesion'">Iniciar Sesión</button>
+            <p>Usuario: [Nombre de Usuario]</p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
